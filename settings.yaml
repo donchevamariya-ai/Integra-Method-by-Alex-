@@ -1,0 +1,26 @@
+model:
+  name: openbmb/VoxCPM2
+  device: cuda
+  sample_rate: 48000
+
+paths:
+  samples: samples/
+  output: output/
+  logs: logs/
+
+alex_voice:
+  sample: samples/alex_reference.wav
+  description: "Мъж на около 40 години, уверен и топъл глас, говори спокойно и ясно, авторитетен тембър с леко средиземноморско влияние"
+  style: "спокоен, авторитетен, вдъхновяващ"
+
+languages:
+  - bg   # Bulgarian — primary
+  - en   # English
+  - de   # German
+  - ru   # Russian
+  - fr   # French
+
+output:
+  format: wav
+  sample_rate: 48000
+  channels: 1
